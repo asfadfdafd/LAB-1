@@ -11,9 +11,9 @@ class Node:
     def __init__(self, node_id, port, peers):
         self.id = node_id
         self.port = port
-        self.peers = peers  # list of strings like "http://172.31.x.x:8001"
+        self.peers = peers 
         self.clock = 0
-        self.store = {}  # key -> (value, timestamp)
+        self.store = {} 
 
         print(f"[{self.id}] Node started on port {port} | Peers: {peers}")
 
